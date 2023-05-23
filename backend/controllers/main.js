@@ -5,21 +5,21 @@ module.exports.home = (req, res) => {
 };
 
 module.exports.about = (req, res) => {
-    res.render('about');
+    res.render('about', { title: 'About' });
 };
 
 module.exports.contact = (req, res) => {
-    res.render('contact');
+    res.render('contact', { title: 'Contact' });
 };
 
 module.exports.login = (req, res) => {
-    res.render('login');
+    res.render('login', { title: 'Login' });
 };
 
 module.exports.register = (req, res) => {
-    res.render('register');
+    res.render('register', { title: 'Register' });
 };
 
 module.exports.forgotpassword = (req, res) => {
-    res.render('forgot-password');
+    res.render('forgot-password', { title: 'Forgot Password' });
 };
