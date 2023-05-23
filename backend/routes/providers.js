@@ -21,5 +21,7 @@ router.get('/add-provider', providersController.addform);
 /* POST add provider page. */
 router.post('/add', providersController.add);
 
+/* GET delete provider page. */
+router.get('/delete/:id', providersController.delete);
 
 module.exports = router;

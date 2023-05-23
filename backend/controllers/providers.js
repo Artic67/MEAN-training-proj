@@ -103,3 +103,21 @@ module.exports.add = (req, res) => {
             title: 'Added'
         });
 };
+
+// Delete Provider
+module.exports.delete = (req, res) => {
+    let id = req.params.id;
+    let provider = providers.find(provider => provider.id == id);
+    let company = provider.company.company_name;
+    let index = providers.indexOf(provider);
+
+    // Delete the provider
+    providers.splice(index, 1);
+
+    res.render('providers/providers-delete',
+        {
+            id: id,
+            title: 'Delete',
+            company: company
+        });
+};
