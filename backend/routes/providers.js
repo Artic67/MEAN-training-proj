@@ -9,11 +9,17 @@ router.get('/', providersController.list);
 /* GET details page. */
 router.get('/info/:id', providersController.details);
 
-/* GET edit page. */
+/* GET edit provider page. */
 router.get('/edit/:id', providersController.edit);
 
-/* POST update page. */
+/* POST update provider page. */
 router.post('/update/:id', providersController.update);
+
+/* GET add provider page. */
+router.get('/add-provider', providersController.addform);
+
+/* POST add provider page. */
+router.post('/add', providersController.add);
 
 
 module.exports = router;
