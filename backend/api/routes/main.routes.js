@@ -30,6 +30,6 @@ router.delete('/providers', mainController.deleteAll);
 router.get('/*', notFound);
 router.post('/*', notFound);
 router.put('/*', notFound);
-router.delete('/*', notFound);
+router.delete('/*', notFound)
 
 module.exports = router;
